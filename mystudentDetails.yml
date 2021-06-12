@@ -1,0 +1,19 @@
+---
+- mystudents:
+  - name: Homadevi
+    phno: 8106438539
+    email: bhargavitigiripalli@gmail.com
+    Address:
+      - streetno: 01
+      - doorno: 3424
+      - pincode: 506001
+
+  - name: kalki
+    phno: 900050012
+    email: kalki@gmail.com
+    Address: nemam
+
+  - name: Balaji
+    phno: 9005000123
+    email: balaji@gmaol.com
+    Address: hitech city
