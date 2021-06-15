@@ -9,7 +9,6 @@
     when: ansible_os_family=="Debian"
 
   - name: i want to  start webserver on ubuntu nodes only
-    apt:
     service:
      name: "{{myubuntuwebpackage}}"
      state: started
