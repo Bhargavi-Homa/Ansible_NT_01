@@ -7,6 +7,14 @@
      name: "{{myubuntuwebpackage}}"
      state: present
     when: ansible_os_family=="Debian"
+
+  - name: i want to  start webserver on ubuntu nodes only
+    apt:
+    service:
+     name: "{{myubuntuwebpackage}}"
+     state: started
+    when: ansible_os_family=="Debian"
+ 
   - name: i want to install webserver on RedHat nodes only
     yum:
      name: "{{myredhatwebpackage}}"
