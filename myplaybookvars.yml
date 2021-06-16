@@ -1,0 +1,16 @@
+---
+- hosts: 172.31.27.82
+  become: yes
+  vars:
+    myvar1: git
+    myvar2: tree
+
+  tasks:
+  - name: git
+    debug: 
+      msg:"{{myvar1}}"
+  - name: install git
+    apt:
+      name: "{{myvar1}}"
+      state: present
+      
