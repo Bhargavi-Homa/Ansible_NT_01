@@ -6,11 +6,10 @@
     myvar2: tree
 
   tasks:
-  - name: git
+  - name: display my var1
     debug: 
-      msg:"{{myvar1}}"
+      msg: "{{myvar1}}"
   - name: install git
     apt:
       name: "{{myvar1}}"
       state: present
-      
