@@ -1,0 +1,8 @@
+---
+# tasks file for my webrole
+- name: I want to install web server on ubuntu nodes
+  apt:
+   name: apache2
+   state: present
+   
+
