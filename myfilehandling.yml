@@ -3,6 +3,7 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
+
   - name: install webserver
     apt:
      name: apache2
@@ -19,7 +20,7 @@
   - name: Restart apache2
     service:
       name: apache2
-      state: restarted
+      got: restart
 
 
 
