@@ -13,6 +13,6 @@
      state: started
   
   - name: i want to install tree
-     apt:
+    apt:
       name: tree
       state: present
